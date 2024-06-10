@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        />
+        <title>Sticky Position Example</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+            }
+
+            .header {
+                background-color: #f8f9fa;
+                padding: 10px 0;
+                text-align: center;
+                font-size: 24px;
+                font-weight: bold;
+                border-bottom: 2px solid #ddd;
+            }
+
+            .navbar {
+                background-color: #333;
+                color: #fff;
+                padding: 10px;
+                position: -webkit-sticky; /* Safari */
+                position: sticky;
+                top: 0;
+                z-index: 1000;
+            }
+
+            .navbar ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+            }
+
+            .navbar li {
+                float: left;
+            }
+
+            .navbar li a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+            .navbar li a:hover {
+                background-color: #575757;
+            }
+
+            .content {
+                padding: 20px;
+            }
+
+            .content p {
+                margin-bottom: 15px;
+            }
+
+            .footer {
+                background-color: #f8f9fa;
+                padding: 10px;
+                text-align: center;
+                border-top: 2px solid #ddd;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">Sticky Position Example</div>
+        <div class="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <h2>粘性定位需要注意的点</h2>
+            <ul>
+                <li>包含块</li>
+                <li>最近可滚动祖先</li>
+            </ul>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit. Vivamus lacinia odio vitae
+                vestibulum vestibulum. Cras venenatis euismod
+                malesuada.
+            </p>
+            <p>
+                Morbi ut libero nec velit tincidunt posuere.
+                Aliquam erat volutpat. Suspendisse potenti.
+                Integer ac quam nec odio gravida tempor.
+            </p>
+            <p>
+                Proin consequat, turpis a vestibulum faucibus,
+                lectus augue tristique augue, ut suscipit nulla
+                nisl a mauris. Sed aliquam tincidunt urna.
+            </p>
+            <p>
+                Vestibulum ante ipsum primis in faucibus orci
+                luctus et ultrices posuere cubilia curae; Donec
+                vel mauris quam.
+            </p>
+            <p>
+                Quisque at congue nisi. Fusce nec erat nec dui
+                viverra pretium at et eros. Mauris non elementum
+                velit. Quisque laoreet orci sit amet nisi
+                venenatis, ut faucibus dui auctor.
+            </p>
+            <p>
+                Ut sit amet sapien at orci consectetur
+                ullamcorper. Duis ac nisl eget libero fermentum
+                aliquam. Donec aliquet leo eget tempor
+                sollicitudin.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit. Vivamus lacinia odio vitae
+                vestibulum vestibulum. Cras venenatis euismod
+                malesuada.
+            </p>
+            <p>
+                Morbi ut libero nec velit tincidunt posuere.
+                Aliquam erat volutpat. Suspendisse potenti.
+                Integer ac quam nec odio gravida tempor.
+            </p>
+            <p>
+                Proin consequat, turpis a vestibulum faucibus,
+                lectus augue tristique augue, ut suscipit nulla
+                nisl a mauris. Sed aliquam tincidunt urna.
+            </p>
+            <p>
+                Vestibulum ante ipsum primis in faucibus orci
+                luctus et ultrices posuere cubilia curae; Donec
+                vel mauris quam.
+            </p>
+            <p>
+                Quisque at congue nisi. Fusce nec erat nec dui
+                viverra pretium at et eros. Mauris non elementum
+                velit. Quisque laoreet orci sit amet nisi
+                venenatis, ut faucibus dui auctor.
+            </p>
+            <p>
+                Ut sit amet sapien at orci consectetur
+                ullamcorper. Duis ac nisl eget libero fermentum
+                aliquam. Donec aliquet leo eget tempor
+                sollicitudin.
+            </p>
+        </div>
+        <div class="footer">Footer Content</div>
+    </body>
+</html>
