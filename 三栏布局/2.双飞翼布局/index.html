@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        />
+        <title>双飞翼布局</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+            body {
+                /* 设置最小宽度，防止挤压使中间内容消失 */
+                min-width: 600px;
+            }
+            .header {
+                text-align: center;
+                height: 70px;
+                background-color: coral;
+            }
+            .main #main-wrapper {
+                margin-left: 100px;
+                margin-right: 100px;
+            }
+            .left,
+            .middle,
+            .right {
+                float: left;
+            }
+            .middle {
+                height: 100px;
+                width: 100%;
+                min-width: 200px;
+                background-color: forestgreen;
+                /* 不能在外层容器里面加padding，否则会使布局乱套 */
+                /* padding-left: 100px;
+                padding-right: 100px; */
+            }
+            .left {
+                height: 100px;
+                width: 100px;
+                background-color: darkmagenta;
+                margin-left: -100%;
+            }
+            .right {
+                height: 100px;
+                width: 100px;
+                background-color: darkslategray;
+                margin-left: -100px;
+            }
+            .content {
+                overflow: hidden;
+            }
+            .footer {
+                text-align: center;
+                height: 50px;
+                clear: both;
+                background-color: darkgrey;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">header</div>
+        <div class="main middle">
+            <div id="main-wrapper">middle</div>
+        </div>
+        <div class="left">left</div>
+        <div class="right">right</div>
+        <div class="footer">footer</div>
+    </body>
+</html>
