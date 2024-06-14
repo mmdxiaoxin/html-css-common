@@ -1,0 +1,11 @@
+/*
+ * 变量是存储信息并在将来重复利用的一种方式，在整个样式表中都可访问。
+*/
+
+$font-stack: Helvetica, sans-serif;
+$primary-color: #333;
+
+body {
+    font: 100% $font-stack;
+    color: $primary-color;
+}

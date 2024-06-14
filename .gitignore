@@ -3,6 +3,7 @@ build/
 dist/
 *.o
 *.exe
+output
 
 # 忽略日志文件
 *.log
